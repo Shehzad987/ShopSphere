@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050508;
+  background-image: radial-gradient(circle at 20% 0%, rgba(0, 245, 255, 0.06), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(0, 140, 255, 0.08), transparent 40%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050508;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2333;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f5ff44;
+}
+
+@layer components {
+  /* Glassmorphism card */
+  .glass-card {
+    @apply bg-surface/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-card;
+  }
+
+  /* Primary CTA button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-background
+      bg-gradient-primary shadow-glow hover:shadow-glowHover hover:-translate-y-0.5
+      transition-all duration-300 ease-out disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0;
+  }
+
+  /* Secondary / outline button */
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-textMain
+      border border-white/15 bg-white/5 hover:border-primary/60 hover:text-primary
+      transition-all duration-300 ease-out;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-textMain placeholder:text-textMuted
+      focus:outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/20 transition-all duration-200;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-display font-bold text-textMain;
+  }
+
+  .container-app {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+}
+
+/* Skeleton shimmer */
+.skeleton {
+  background: linear-gradient(90deg, #111827 25%, #1a2333 37%, #111827 63%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s linear infinite;
+}
