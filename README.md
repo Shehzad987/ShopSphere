@@ -1,4 +1,4 @@
-# ShopSphere 🛸
+# ShopSphere 
 
 A premium, production-ready full-stack e-commerce platform built with the MERN stack
 (MongoDB, Express, React 19, Node.js) featuring a futuristic glassmorphism UI.
@@ -9,7 +9,7 @@ A premium, production-ready full-stack e-commerce platform built with the MERN s
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Storefront**: Home, product listing with search/filter/sort/pagination, product details with
   reviews & ratings, related products, shopping cart, multi-step checkout, order history, 404 page.
@@ -23,7 +23,7 @@ A premium, production-ready full-stack e-commerce platform built with the MERN s
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 | Layer      | Technology                                             |
 |------------|---------------------------------------------------------|
@@ -67,7 +67,7 @@ shopsphere/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Prerequisites
 - Node.js 18+
@@ -132,7 +132,7 @@ npm run client   # starts Vite dev server
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 ### Auth — `/api/auth`
 | Method | Endpoint     | Access  | Description          |
@@ -176,7 +176,7 @@ npm run client   # starts Vite dev server
 
 ---
 
-## 🎨 Design System
+##  Design System
 
 | Token         | Value      |
 |---------------|------------|
@@ -192,7 +192,7 @@ smooth hover/scroll animations throughout.
 
 ---
 
-## 📦 Production Build
+##  Production Build
 
 ```bash
 cd client
@@ -205,6 +205,6 @@ client's API base URL / proxy accordingly for production.
 
 ---
 
-## 📄 License
+##  License
 
 MIT — built for portfolio and educational use.
