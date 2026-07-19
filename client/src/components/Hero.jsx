@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-radial">
       <div className="container-app grid lg:grid-cols-2 gap-12 items-center py-20 lg:py-28">
-        {/* Left: copy */}
+        
         <div className="animate-slide-up">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-primary/30 text-primary text-xs font-medium mb-6">
             <FiZap size={14} /> New season drop is live
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right: illustration */}
+
         <div className="relative hidden lg:flex items-center justify-center animate-fade-in">
           <div className="absolute w-80 h-80 rounded-full bg-primary/20 blur-[100px]" />
           <svg viewBox="0 0 400 400" className="relative w-full max-w-md animate-float">
