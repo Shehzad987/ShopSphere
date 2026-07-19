@@ -1,16 +1,13 @@
-/**
- * Handles requests to undefined routes.
- */
+// Handles requests to undefined routes.
+ 
 export const notFound = (req, res, next) => {
   const error = new Error(`Route not found - ${req.originalUrl}`);
   res.status(404);
   next(error);
 };
 
-/**
- * Centralized error handler. Converts thrown errors (including Mongoose
- * validation/cast errors) into consistent JSON error responses.
- */
+// Centralized error handler. Converts thrown errors (including Mongoose validation/cast errors) into consistent JSON error responses.
+ 
 export const errorHandler = (err, req, res, next) => {
   let statusCode = res.statusCode === 200 ? 500 : res.statusCode;
   let message = err.message;

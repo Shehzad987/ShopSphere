@@ -26,7 +26,7 @@ const FilterSidebar = ({
         </div>
       </div>
 
-      {/* Category filter */}
+
       <div className="mb-6">
         <h4 className="text-sm font-medium text-textMuted mb-3">Category</h4>
         <div className="space-y-2">

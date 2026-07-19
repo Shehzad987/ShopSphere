@@ -2,10 +2,8 @@ import jwt from 'jsonwebtoken';
 import asyncHandler from 'express-async-handler';
 import User from '../models/User.js';
 
-/**
- * Protects routes by verifying the JWT sent in the Authorization header.
- * Attaches the authenticated user (minus password) to req.user.
- */
+//Protects routes by verifying the JWT sent in the Authorization header. Attaches the authenticated user (minus password) to req.user.
+ 
 export const protect = asyncHandler(async (req, res, next) => {
   let token;
 
@@ -32,9 +30,7 @@ export const protect = asyncHandler(async (req, res, next) => {
   }
 });
 
-/**
- * Restricts a route to admin users only. Must run after `protect`.
- */
+// Restricts a route to admin users only. Must run after `protect`.
 export const admin = (req, res, next) => {
   if (req.user && req.user.role === 'admin') {
     return next();
